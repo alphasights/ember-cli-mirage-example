@@ -2,28 +2,28 @@
   <form>
     <label>
       Title
-      {{input value=movie.title class="form-input"}}
+      {{input value=movie.title class="form-input name"}}
     </label>
 
     <label>
       Rating
-      {{input value=movie.rating class="form-input"}}
+      {{input value=movie.rating class="form-input rating"}}
     </label>
 
     <label>
       Trailer
-      {{input value=movie.rating class="form-input"}}
+      {{input value=movie.rating class="form-input trailer"}}
     </label>
 
-    <button {{action "saveMovie"}}>Save</button>
+    <button {{action "saveMovie"}} class="form-submit">Save</button>
   </form>
 
   <section class="movies-list">
     {{#each model as |movie|}}
       <article class="movie">
-        <span class="title">{{movie.title}}</span>
-        <span class="rating">{{movie.rating}}</span>
-        <span class="trailer-link">{{movie.trailerLink}}</span>
+        <span class="title">Name: {{movie.name}}</span>
+        <span class="rating">Rating: {{movie.rating}}</span>
+        <span class="trailer-link">Trailer: {{movie.trailerLink}}</span>
       </article>
     {{/each}}
   </section>

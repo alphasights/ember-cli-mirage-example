@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
 
   actions: {
     saveMovie: function() {
-      var newMovie = this.get('store').createRecord(this.get('movie'));
+      var newMovie = this.get('store').createRecord('movie', this.get('movie'));
       newMovie.save();
     }
   }
