@@ -1,0 +1,7 @@
+.movies {
+  .movie {
+    > span {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<div class="movies">
+  <form>
+    <label>
+      Title
+      {{input value=movie.title class="form-input"}}
+    </label>
+
+    <label>
+      Rating
+      {{input value=movie.rating class="form-input"}}
+    </label>
+
+    <label>
+      Trailer
+      {{input value=movie.rating class="form-input"}}
+    </label>
+
+    <button {{action "saveMovie"}}>Save</button>
+  </form>
+
+  <section class="movies-list">
+    {{#each model as |movie|}}
+      <article class="movie">
+        <span class="title">{{movie.title}}</span>
+        <span class="rating">{{movie.rating}}</span>
+        <span class="trailer-link">{{movie.trailerLink}}</span>
+      </article>
+    {{/each}}
+  </section>
+</div>
