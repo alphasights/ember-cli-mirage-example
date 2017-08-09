@@ -15,8 +15,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
+* On the terminal, `git clone https://github.com/alphasights/ember-cli-mirage-example.git`
+* On the terminal, `cd ember-cli-mirage-example`
 * `npm install`
 * `bower install`
 
